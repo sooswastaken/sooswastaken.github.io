@@ -30,6 +30,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 3px 3px 40px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 40px 6px rgba(0, 0, 0, 0.25);
 }
 
 .navbar .logo {
@@ -39,6 +42,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .navbar .logo img {
@@ -48,23 +52,75 @@
 }
 
 .navbar .logo h1 {
-  color: #292929;
+  color: black;
   font-size: 2em;
+  padding-bottom: 0.16em;
+  margin-left: 0.2em;
 }
 
 .navbar button {
   float: right;
   display: none;
+  border: none;
+  background-color: #e0e0e0;
+  padding: 1em;
+  border-radius: 0.25em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.navbar button:hover {
+  background-color: #c9c9c9;
+}
+
+.navbar button:active {
+  background-color: #b4b4b4;
 }
 
 .navbar ul {
   display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: black;
+}
+
+.navbar ul a:hover {
+  color: #00858f;
+}
+
+.navbar ul a:active {
+  color: #b4b4b4;
 }
 
 .content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 3px 3px 40px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 40px 6px rgba(0, 0, 0, 0.25);
+  height: 2em;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 0.5em;
 }
 
 .menu-btn {
@@ -134,7 +190,7 @@
           transform: rotate(-45deg);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .menu-btn {
     display: none;
   }
