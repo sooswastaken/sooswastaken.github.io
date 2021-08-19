@@ -20,7 +20,7 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: rgb(240, 240, 240);
-  box-shadow: 3px 3px 40px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 
   .logo {
     display: flex;
@@ -46,10 +46,11 @@
     display: none;
     border: none;
     background-color: rgb(224, 224, 224);
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 0.25em;
     transition: 0.2s;
     cursor: pointer;
+    font-size: 1.4em;
     font-weight: 800;
   }
 
@@ -91,7 +92,7 @@
 
 .footer {
   background-color: rgb(240, 240, 240);
-  box-shadow: 3px 3px 40px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   height: 2em;
   text-align: center;
   p {
