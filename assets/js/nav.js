@@ -13,7 +13,7 @@ menuBtn.addEventListener('click', () => {
       if (pos == 0) {
         clearInterval(id);
       } else {
-        pos = pos + 0.5; 
+        pos++; 
         elem.style.right = pos + 'em'; 
       }
     }
@@ -29,7 +29,7 @@ menuBtn.addEventListener('click', () => {
       if (pos == -30) {
         clearInterval(id);
       } else {
-        pos = pos - 0.5; 
+        pos--;
         elem.style.right = pos + 'em'; 
       }
     }
